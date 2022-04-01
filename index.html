@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Gallery</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <section class="gallery">
+                <div class="title"><h1>GALLERY</h1></div>
+                <div class="photo-container">
+                </div>
+                <div class="numBtns">
+                </div>
+                <div class="prevNextBtns invisible">
+                    <button disabled class="prevBtn">PREV</button>
+                    <button disabled class="nextBtn">NEXT</button>
+                </div>
+                <div class="functionBtns invisible">
+                    <button class="deleteBtn">DELETE</button>
+                    <button class="exportBtn">EXPORT TO TEXT FILE</button>
+                </div>
+                <form class="addPhotoForm">
+                    <label for="add-photo">Type photo's link here and press ENTER:</label>
+                    <input type="text" 
+                            id="photo-link" 
+                            name="photo-link"
+                            accept="image/png, image/jpeg"
+                            > 
+                </form>
+            </section>
+        </main>
+        <script src="./gallery.js"></script>
+    </body>
+</html>
